@@ -21,20 +21,20 @@ export const MEALS = [
       {
         id: "cafe-1",
         label: null,
-        notes: "Adoçantes: Stevia (começar com poucas gotas e testar o paladar).",
+        notes: "Adoçantes Stevia (começar com poucas gotas)",
         foods: [
           {
             id: "cafe-pao",
             name: "Pão integral",
-            quantity: "2 fatias (50g)",
+            quantity: "3 fatias (75g)",
             substitutions: [
-              { name: "Pão francês", quantity: "1 unidade (50g)" },
+              { name: "Pão francês", quantity: "1,5 unidades (75g)" },
             ],
           },
           {
             id: "cafe-frango",
             name: "Peito de frango",
-            quantity: "30g",
+            quantity: "80g",
             substitutions: [],
           },
           {
@@ -50,16 +50,22 @@ export const MEALS = [
             ],
           },
           {
-            id: "cafe-whey",
-            name: "Whey protein concentrado",
-            quantity: "20g",
-            substitutions: [],
-          },
-          {
             id: "cafe-mamao",
             name: "Mamão",
             quantity: "150g",
             substitutions: [{ name: "Morango", quantity: "200g" }],
+          },
+          {
+            id: "cafe-mel",
+            name: "Mel",
+            quantity: "1 colher de sopa rasa (15g)",
+            substitutions: [],
+          },
+          {
+            id: "cafe-creatina",
+            name: "Creatina",
+            quantity: "3g",
+            substitutions: [],
           },
         ],
       },
@@ -80,26 +86,26 @@ export const MEALS = [
           {
             id: "almoco-frango",
             name: "Peito de frango sem pele cozido",
-            quantity: "1,2 filés médios (120g)",
+            quantity: "80g",
             substitutions: [
-              { name: "Patinho grelhado / filé mignon", quantity: "100g" },
-              { name: "Filé de tilápia", quantity: "150g" },
-              { name: "Moela de frango cozida", quantity: "120g" },
+              { name: "Patinho grelhado / filé mignon", quantity: "70g" },
+              { name: "Filé de tilápia", quantity: "100g" },
+              { name: "Moela de frango cozida", quantity: "80g" },
               {
                 name: "Bisteca de porco assada / filé mignon suíno / lombo",
-                quantity: "120g",
+                quantity: "80g",
               },
             ],
           },
           {
             id: "almoco-arroz",
             name: "Arroz branco cozido",
-            quantity: "4 colheres de sopa cheias (100g)",
+            quantity: "6 colheres de sopa cheias (150g)",
             substitutions: [
-              { name: "Macarrão cozido", quantity: "100g" },
-              { name: "Batata-doce cozida", quantity: "128g" },
-              { name: "Batata inglesa cozida", quantity: "200g" },
-              { name: "Macaxeira cozida", quantity: "100g" },
+              { name: "Macarrão cozido", quantity: "150g" },
+              { name: "Batata doce cozida", quantity: "192g" },
+              { name: "Batata inglesa cozida", quantity: "300g" },
+              { name: "Macaxeira cozida", quantity: "150g" },
             ],
           },
           {
@@ -125,7 +131,7 @@ export const MEALS = [
       {
         id: "lanche-1",
         label: "Whey e fruta",
-        notes: "Adoçantes: Stevia (começar com poucas gotas e testar o paladar).",
+        notes: "Stevia",
         foods: [
           {
             id: "lanche1-whey",
@@ -138,11 +144,8 @@ export const MEALS = [
             name: "Leite de vaca desnatado em pó",
             quantity: "10g",
             substitutions: [
-              {
-                name: "Leite de vaca desnatado",
-                quantity: "0,5 copo americano duplo (120 ml)",
-              },
-              { name: "Iogurte zero", quantity: "1 unidade (100g)" },
+              { name: "Leite desnatado", quantity: "120 ml" },
+              { name: "Iogurte zero", quantity: "100g" },
             ],
           },
           {
@@ -157,6 +160,12 @@ export const MEALS = [
             quantity: "2 colheres de sopa rasas (30g)",
             substitutions: [],
           },
+          {
+            id: "lanche1-aveia",
+            name: "Aveia em flocos finos",
+            quantity: "20g",
+            substitutions: [],
+          },
         ],
       },
       {
@@ -167,10 +176,10 @@ export const MEALS = [
           {
             id: "lanche2-cuscuz",
             name: "Cuscuz de milho",
-            quantity: "45g",
+            quantity: "80g",
             substitutions: [
-              { name: "Pão integral", quantity: "1 fatia (25g)" },
-              { name: "Pão francês", quantity: "30g" },
+              { name: "Pão integral", quantity: "2 fatias (50g)" },
+              { name: "Pão francês", quantity: "50g" },
             ],
           },
           {
@@ -213,31 +222,25 @@ export const MEALS = [
           {
             id: "jantar1-frango",
             name: "Peito de frango",
-            quantity: "1,4 filés médios (140g)",
+            quantity: "1,2 filés médios (120g)",
             substitutions: [
-              { name: "Patinho grelhado / filé mignon", quantity: "110g" },
-              { name: "Filé de tilápia", quantity: "190g" },
-              { name: "Moela de frango cozida", quantity: "140g" },
-              {
-                name: "Bisteca de porco assada / filé mignon suíno / lombo",
-                quantity: "140g",
-              },
+              { name: "Patinho / filé mignon", quantity: "100g" },
+              { name: "Tilápia", quantity: "160g" },
+              { name: "Moela", quantity: "120g" },
+              { name: "Bisteca / lombo suíno", quantity: "120g" },
             ],
           },
           {
             id: "jantar1-arroz",
             name: "Arroz branco cozido",
-            quantity: "3 colheres de sopa cheias (75g)",
+            quantity: "8 colheres de sopa cheias (200g)",
             substitutions: [
-              {
-                name: "Macarrão cozido",
-                quantity: "1,5 colheres de servir cheias (75g)",
-              },
-              { name: "Batata-doce cozida", quantity: "97,5g" },
-              { name: "Batata inglesa cozida", quantity: "150g" },
-              { name: "Macaxeira cozida", quantity: "75g" },
-              { name: "Rap10", quantity: "1,5 unidades (60g)" },
-              { name: "Cuscuz de milho", quantity: "60g" },
+              { name: "Macarrão", quantity: "200g" },
+              { name: "Batata doce", quantity: "260g" },
+              { name: "Batata inglesa", quantity: "400g" },
+              { name: "Macaxeira", quantity: "200g" },
+              { name: "Rap10", quantity: "4 unidades (160g)" },
+              { name: "Cuscuz", quantity: "160g" },
             ],
           },
           {
@@ -245,15 +248,15 @@ export const MEALS = [
             name: "Banana",
             quantity: "1 unidade grande (55g)",
             substitutions: [
-              { name: "Laranja", quantity: "0,5 unidade média (90g)" },
-              { name: "Tangerina", quantity: "0,5 unidade média (67,5g)" },
-              { name: "Melancia", quantity: "1 fatia pequena (100g)" },
-              { name: "Melão", quantity: "2 fatias pequenas (140g)" },
+              { name: "Laranja", quantity: "90g" },
+              { name: "Tangerina", quantity: "67,5g" },
+              { name: "Melancia", quantity: "100g" },
+              { name: "Melão", quantity: "140g" },
               { name: "Uva", quantity: "50g" },
-              { name: "Kiwi", quantity: "1 unidade média (76g)" },
-              { name: "Tâmara seca", quantity: "3 unidades (21g)" },
-              { name: "Pera", quantity: "1 unidade média (110g)" },
-              { name: "Abacaxi", quantity: "1 fatia média (75g)" },
+              { name: "Kiwi", quantity: "76g" },
+              { name: "Tâmara seca", quantity: "21g (3 un)" },
+              { name: "Pera", quantity: "110g" },
+              { name: "Abacaxi", quantity: "75g" },
             ],
           },
         ],
@@ -269,8 +272,8 @@ export const MEALS = [
             quantity: "1 unidade (50g)",
             substitutions: [
               { name: "Pão integral", quantity: "2 fatias (49,1g)" },
-              { name: "Cuscuz de milho", quantity: "80g" },
-              { name: "Pão francês", quantity: "1 unidade (50g)" },
+              { name: "Cuscuz", quantity: "80g" },
+              { name: "Pão francês", quantity: "50g" },
             ],
           },
           {
@@ -279,10 +282,7 @@ export const MEALS = [
             quantity: "100g",
             substitutions: [
               { name: "Patinho moído", quantity: "90g" },
-              {
-                name: "Patinho cru (para fazer discos congelados)",
-                quantity: "160g",
-              },
+              { name: "Patinho cru (discos)", quantity: "160g" },
             ],
           },
           {
@@ -292,12 +292,12 @@ export const MEALS = [
             substitutions: [],
           },
           {
-            id: "jantar2-melao",
-            name: "Melão",
-            quantity: "100g",
+            id: "jantar2-banana",
+            name: "Banana",
+            quantity: "2 unidades grandes (110g)",
             substitutions: [
-              { name: "Uva", quantity: "50g" },
-              { name: "Banana", quantity: "1 unidade grande (55g)" },
+              { name: "Uva", quantity: "100g" },
+              { name: "Melão", quantity: "200g" },
             ],
           },
         ],
